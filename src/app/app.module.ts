@@ -8,37 +8,21 @@ import { MenuComponent } from './componentes/menu/menu.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { NoticiasComponent } from './paginas/noticias/noticias.component';
 
-
-
-const routes:Routes =[
+const routes: Routes = [
   {
-     path:'inicio',
-     component: InicioComponent
-     
+    path: 'inicio',
+    component: InicioComponent,
   },
-    {
-  path:'noticias',
-    component:NoticiasComponent
-}
-  ];
-
-
-
+  {
+    path: 'noticias',
+    component: NoticiasComponent,
+  },
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FooterComponent,
-    MenuComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot(routes)
-  ],
+  declarations: [AppComponent, FooterComponent, MenuComponent],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
-
+export class AppModule {}
